@@ -1,0 +1,26 @@
+.show div{
+    width: 20px;
+}
+
+.info div{
+    float: right;
+}
+
+#graph1 {
+    display: none;
+    float: left;
+}
+#graph2 {
+    display: none;
+}
+#graph3 {
+    display: none;
+    float: left;
+}
+#graph4 {
+    display: none;
+}
+
+.display-visible{
+    display: "";
+}

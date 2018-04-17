@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="./js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.csv.min.js" type="text/javascript"></script>
+    <script src="./js/Chart.min.js" type="text/javascript"></script>
+    <script src="./js/index.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/main.css"></link>
+    <meta charset="utf-8">
+    <title>内定者情報</title>
+</head>
+<body>
+        <div class="show">
+            <select id="select"></select>
+            <button onclick="show();">表示</button>
+        </div>
+        <div id="info">
+            <img id="photo" width="140px" height="160px"/>
+            <div>
+                <ul>
+                    <li><label>名前:<span id="name"></span><span id="yomi"></span></label></li>
+                    <li><label><span id="sex"></span></label></li>
+                    <li><label>出身:<span id="graduate"></span></label></li>
+                    <li><label>最寄:<span id="nearest"></span></label></li>
+                    <li><label>資格等:<span id="skills"></span></label></li>
+                </ul>
+            </div>
+            <canvas id="graph1" height="400px" width="400px"></canvas>
+            <!-- レーダーにする↓ -->
+            <canvas id="graph2" height="400px" width="400px"></canvas>
+            <!-- Linuxのアンケート結果 -->
+            <canvas id="graph3" height="400px" width="400px"></canvas>
+            <!-- レーダーにする↓ -->
+            <canvas id="graph4" height="400px" width="400px"></canvas>
+            <div id="personalityArea">
+                <label>性格</label>
+                <textarea id="personality" cols=40 rows=4></textarea>
+            </div>
+        </div>
+</body>
+</html>
